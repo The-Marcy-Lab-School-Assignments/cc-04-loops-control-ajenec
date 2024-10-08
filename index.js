@@ -56,3 +56,4 @@ console.log(sumOfThreeOrFive(15));
 const isAllLowerCase = () => {};
 
 //BONUS QUESTION
+const countMultiplesOfFive = (array) => {};
