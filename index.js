@@ -30,7 +30,7 @@ const isNegative = (num) => {
     return false;
   }*/
 };
-console.log(isNegative(-2));
+//console.log(isNegative(-2));
 
 //4
 const betweenFiveAndTwenty = (num) => {
@@ -43,7 +43,14 @@ const betweenFiveAndTwenty = (num) => {
 //console.log(betweenFiveAndTwenty(12));
 
 //5
-const sumOfThreeOrFive = () => {};
+const sumOfThreeOrFive = (num) => {
+  if (num % 3 || num % 5) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(sumOfThreeOrFive(15));
 
 //6
 const isAllLowerCase = () => {};
