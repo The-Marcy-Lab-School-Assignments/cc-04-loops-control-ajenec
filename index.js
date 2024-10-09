@@ -43,17 +43,29 @@ const betweenFiveAndTwenty = (num) => {
 //console.log(betweenFiveAndTwenty(12));
 
 //5
-const sumOfThreeOrFive = (num) => {
-  if (num % 3 || num % 5) {
+const sumOfThreeOrFive = () => {
+  let sum = 0;
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+};
+//console.log(sumOfThreeOrFive());
+
+//6
+const isAllLowerCase = (str) => {
+  if (str.toLowerCase() === str) {
     return true;
   } else {
     return false;
   }
+  //return str.toLowerCase() === str;
 };
-console.log(sumOfThreeOrFive(15));
 
-//6
-const isAllLowerCase = () => {};
-
+console.log(isAllLowerCase("hello"));
+console.log(isAllLowerCase("seven eleven"));
+console.log(isAllLowerCase("Seven eleven has the best slushies"));
 //BONUS QUESTION
 const countMultiplesOfFive = (array) => {};
